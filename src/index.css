@@ -37,7 +37,7 @@ body {
   }
 
   nav {
-    @apply flex justify-between items-center bg-white/50 backdrop-blur-3xl p-2 px-5 select-none;
+    @apply flex justify-between items-center bg-white/50 backdrop-blur-3xl p-2 px-5 select-none fixed top-0 left-0 right-0 z-[100];
 
     div {
       @apply flex items-center max-sm:w-full max-sm:justify-center gap-5;
