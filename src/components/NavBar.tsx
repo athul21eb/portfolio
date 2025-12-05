@@ -5,7 +5,7 @@ import dayjs from "dayjs";
 const NavBar = () => {
   const { openWindow } = useWindowStore();
   return (
-    <nav className="z-50">
+    <nav style={{ zIndex: 10000 }}>
       <div>
         <img src="/images/logo.svg" alt="src" />
         <p className="font-bold">Athul's Portfolio</p>

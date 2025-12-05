@@ -44,7 +44,6 @@ const Resume = () => {
             onLoadSuccess={({ numPages }) => {
               setNumPages(numPages);
               setCurrentPage(1);
-              console.log("PDF loaded:", numPages, "pages");
             }}
             onLoadError={(error) => {
               console.error("Failed to load:", error);
@@ -56,7 +55,7 @@ const Resume = () => {
               pageNumber={currentPage}
               renderTextLayer={true}
               renderAnnotationLayer={true}
-              height={600}
+
             />
           </Document>
         </div>
