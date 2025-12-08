@@ -37,7 +37,7 @@ body {
   }
 
   nav {
-    @apply flex justify-between items-center bg-white/50 backdrop-blur-3xl p-2 px-5 select-none fixed top-0 left-0 right-0 z-[100];
+    @apply flex justify-between items-center bg-white/50 backdrop-blur-3xl p-2 px-5 select-none fixed w-full;
 
     div {
       @apply flex items-center max-sm:w-full max-sm:justify-center gap-5;
@@ -114,9 +114,9 @@ body {
     }
   }
 
-    #window-header {
-      @apply flex items-center justify-between px-4 py-3 rounded-t-lg bg-gray-50 border-b border-gray-200 select-none text-sm text-gray-400;
-    }
+  #window-header {
+    @apply flex items-center justify-between px-4 py-3 rounded-t-lg bg-gray-50 border-b border-gray-200 select-none text-sm text-gray-400;
+  }
 
   #safari {
     @apply w-3xl absolute top-40 left-2/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
@@ -140,7 +140,7 @@ body {
         @apply grid grid-cols-12 space-x-5;
 
         img {
-          @apply size-full rounded-md object-cover;
+          @apply size-1/2 rounded-md object-center;
         }
 
         .content {

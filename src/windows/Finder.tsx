@@ -25,7 +25,7 @@ const Finder = () => {
               activeLocation.id === item.id ? "active" : "non-active"
             )}
           >
-            <img src={item.icon} className="w-2" />
+            <img src={item.icon} alt={item.name} className="size-5" />
             <p className="text-sm font-medium truncate"> {item.name}</p>
           </li>
         ))}
@@ -43,7 +43,9 @@ const Finder = () => {
       )
         return window.open(item.href, "_blank");
 
-      openWindow(`${item.fileType}${item.kind}`, item);
+      if(item.kind){
+        return openWindow(`${item.fileType}${item.kind}`, item);
+      }
     }
     if (item.kind === "folder") return setActiveLocation(item);
   };
@@ -52,12 +54,14 @@ const Finder = () => {
       {" "}
       <div id="window-header">
         <WindowControls target="finder" />
+        <p className=" font-semibold text-gray-500">Finder</p>
         <SearchIcon className="icon" />
       </div>
       <div className="bg-white flex h-full">
         <div className="sidebar">
           {renderList("Favorites", Object.values(locations))}
-          {renderList("My Projects", locations.work.children)}
+          {locations.work?.children &&
+            renderList("My Projects", locations.work.children)}
         </div>
         <ul className="content">
           {"children" in activeLocation &&

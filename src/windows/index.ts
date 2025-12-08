@@ -1,5 +1,10 @@
-import Terminal from "@windows/Terminal";
-import Safari from "@windows/Safari";
-import Resume from "@windows/Resume";
-import Finder from "@windows/Finder";
-export { Terminal ,Safari,Resume,Finder};
+import Finder from "./Finder";
+import Resume from "./Resume";
+import Safari from "./Safari";
+import Terminal from "./Terminal";
+import Text from "./Text";
+import Image from "./Image";
+import Contact from "./Contact";
+import Photos from "./Photos";
+
+export { Finder, Resume, Safari, Terminal, Text, Image, Contact, Photos };

@@ -18,26 +18,43 @@ const Safari = () => {
     <>
       <div id="window-header">
         <WindowControls target="safari" />
-        <PanelLeft className="ml-10 icon" />
+        <button aria-label="Toggle sidebar">
+          <PanelLeft className="ml-10 icon" />
+        </button>
         <div className="flex items-center gap-1 ml-5">
-          <ChevronLeft className="icon" />
-          <ChevronRight className="icon" />
+          <button aria-label="Go back">
+            <ChevronLeft className="icon" />
+          </button>
+          <button aria-label="Go forward">
+            <ChevronRight className="icon" />
+          </button>
         </div>
         <div className="flex-1 flex-center gap-3">
-          <ShieldHalf className="icon" />
+          <button aria-label="Security">
+            <ShieldHalf className="icon" />
+          </button>
           <div className="search">
-            <Search className="icon" />
+            <button aria-label="Search">
+              <Search className="icon" />
+            </button>
             <input
               className="flex-1"
               type="text"
               placeholder="Search or Enter a Website Name"
+              aria-label="Search or Enter a Website Name"
             />
           </div>
         </div>
         <div className="flex items-center gap-5">
-          <Share className="icon" />
-          <Plus className="icon" />
-          <Copy className="icon" />
+          <button aria-label="Share">
+            <Share className="icon" />
+          </button>
+          <button aria-label="Add new tab">
+            <Plus className="icon" />
+          </button>
+          <button aria-label="Copy">
+            <Copy className="icon" />
+          </button>
         </div>
       </div>
       <div className="blog">
@@ -50,11 +67,11 @@ const Safari = () => {
                 <img src={image} alt={title} />
               </div>
               <div className="content">
-               <p> {date}</p>
+                <p> {date}</p>
                 <h2>{title}</h2>
                 <a href={link} target="_blank" rel="noopener noreferrer">
-                  Check out the full post <MoveRight className="icon-hover"/>
-
+                  Check out the full post{" "}
+                  <MoveRight className="hover:scale-105" />
                 </a>
               </div>
             </div>
