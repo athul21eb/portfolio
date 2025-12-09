@@ -2,12 +2,10 @@ import { WindowControls } from "@components";
 import { gallery, photosLinks } from "@constants";
 import { WindowWrapper } from "@hoc";
 import { useWindowStore } from "@store";
-import clsx from "clsx";
+
 import { Mail, Search } from "lucide-react";
 
-
 const Photos = () => {
-  const activeId = 1;
   const openWindow = useWindowStore((state) => state.openWindow);
   return (
     <>
@@ -27,11 +25,7 @@ const Photos = () => {
               <li
                 key={link.id}
                 // onClick={() => setActiveId(link.id)}
-                className={clsx(
-                  activeId === link.id
-                    ? "bg-blue-100 text-blue-700"
-                    : "text-gray-700 hover:bg-gray-200"
-                )}
+                className="text-gray-700 hover:bg-gray-200"
               >
                 <img src={link.icon} alt={link.title} />
                 <p>{link.title}</p>
@@ -46,7 +40,7 @@ const Photos = () => {
                 key={item.id}
                 onClick={() =>
                   openWindow("imgfile", {
-                    name: item?.id ?? "image",
+                    name: item.name,
                     imageUrl: item.img,
                   })
                 }

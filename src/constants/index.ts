@@ -197,18 +197,22 @@ const gallery = [
   {
     id: 1,
     img: "/images/a.jpg",
+    name:"athul"
   },
   {
     id: 2,
     img: "/projects/devevent-1.png",
+    name:"dev events"
   },
   {
     id: 3,
     img: "/projects/blog-2.png",
+    name:"blog"
   },
   {
     id: 4,
     img: "/projects/fireboots-1.png",
+    name:"fire boots"
   },
 ];
 
