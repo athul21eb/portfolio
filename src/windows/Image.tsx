@@ -12,7 +12,7 @@ const Image = () => {
     (state) => state.windows.imgfile.data
   ) as ImageFileData | null;
 
-  if (!data) {
+ if (!data || typeof data.name !== 'string' || typeof data.imageUrl !== 'string') {
     return null;
   }
 

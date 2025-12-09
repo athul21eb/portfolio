@@ -13,7 +13,7 @@ const Home = () => {
     openWindow("finder");
   };
   useGSAP(() => {
-    Draggable.create(".folder");
+     Draggable.create("#home .folder");
   }, []);
 
   const projects = locations.work?.children ?? [];

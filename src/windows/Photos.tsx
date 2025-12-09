@@ -4,10 +4,10 @@ import { WindowWrapper } from "@hoc";
 import { useWindowStore } from "@store";
 import clsx from "clsx";
 import { Mail, Search } from "lucide-react";
-import { useState } from "react";
+
 
 const Photos = () => {
-  const [activeId] = useState(1);
+  const activeId = 1;
   const openWindow = useWindowStore((state) => state.openWindow);
   return (
     <>
