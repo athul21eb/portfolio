@@ -49,7 +49,7 @@ A modern, interactive macOS-inspired portfolio that brings the elegance of Apple
 
 ```bash
 # Clone the repository
-git clone https://github.com/athul21eb/portpolio.git
+git clone https://github.com/athul21eb/portfolio.git
 cd portpolio
 
 # Install dependencies
@@ -203,7 +203,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-**[⭐ Star this repo](https://github.com/athul21eb/portpolio)** if you find it helpful!
+**[⭐ Star this repo](https://github.com/athul21eb/portfolio)** if you find it helpful!
 
 Made with ❤️ and lots of ☕
 
